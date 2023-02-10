@@ -1,0 +1,86 @@
+.homepage {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titlehome {
+  font-size: 1.56rem;
+  color: #233073;
+  width: 10rem;
+  text-align: left;
+  line-height: 1.1;
+  top: 100rem;
+}
+
+.image {
+  width: 250px;
+  padding: 1rem;
+  margin-top: 20px;
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  position: relative;
+  width: 70px;
+  margin-top: 7rem;
+}
+
+.buttondiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonentry {
+  margin-top: 10%;
+  padding: 0.4em 5em;
+  background: #233073;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.imageback {
+  display: none;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+@media screen and (min-width: 700px) {
+  .homepage {
+    justify-content: space-around;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .imageback {
+    display: inline;
+    width: 50%;
+  }
+}

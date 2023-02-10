@@ -1,0 +1,163 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.obj {
+  width: 80%;
+  padding: 3rem;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.headerDash {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 0.1rem #efc84a;
+}
+
+.welcomeUser {
+  color: #233073;
+  font-size: 1.2rem;
+}
+
+.imgConfig {
+  width: 1.5rem;
+}
+
+.search {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  border-radius: 0.5rem;
+  background: rgba(241, 150, 150, 0.8);
+  padding: 0.2rem 2rem;
+}
+
+.inputsearch {
+  width: 100%;
+  background-image: url("../../assets/search.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 1.2em;
+  padding: 0.1rem 2rem;
+  margin: 0.1rem;
+}
+
+.title {
+  gap: 1rem;
+  margin-top: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: #233073;
+}
+
+.counter,
+.imgContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: rgba(9, 15, 92, 0.473);
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+.contacts {
+  display: block;
+
+  height: 60vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.82rem;
+  margin-top: 1rem;
+  border-bottom: solid 0.1rem #efc84a;
+  padding: 1.5rem;
+}
+
+p {
+  margin: 0;
+}
+
+.contentContact {
+  color: #233073;
+  padding-bottom: 1rem;
+}
+
+.btnEdit {
+  display: flex;
+  gap: 1rem;
+}
+
+.btns {
+  width: 0.9rem;
+}
+
+.footerDash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.footer {
+  color: #848aa8;
+}
+
+@media screen and (min-width: 600px) {
+  .content {
+    background-image: url("../../assets/backgrounddash.svg");
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .obj {
+    width: 50rem;
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 0.82rem;
+    margin-top: 1rem;
+    border-bottom: solid 0.1rem #efc84a;
+  }
+
+  .contentContact {
+    display: flex;
+    gap: 3rem;
+    color: #233073;
+    padding-bottom: 1rem;
+  }
+
+  .btnEdit {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .btns {
+    width: 0.9rem;
+  }
+}

@@ -1,0 +1,123 @@
+.loginpage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/backgroundentry.svg");
+  background-image: linear-gradient(#efc84a, #e56353);
+}
+
+.containerrr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  width: 90%;
+  height: 90vh;
+  border-radius: 2rem;
+  background: rgba(9, 15, 92, 0.473);
+}
+
+h1 {
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  color: #fff;
+  border: none;
+  border-bottom: solid 1px #fff;
+  background-color: transparent;
+  margin-top: 0.5rem;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.inputname {
+  background-image: url("../../assets/iconsuser.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 1.2em;
+  padding: 2em;
+}
+
+.inputemail {
+  background-image: url("../../assets/iconsemail.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 1.2em;
+  padding: 2em;
+}
+
+.inputcontact {
+  background-image: url("../../assets/iconscontact.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 1.2em;
+  padding: 2em;
+}
+
+.inputpwd {
+  background-image: url("../../assets/iconspass.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 1.2em;
+  padding: 2em;
+}
+
+.btnlogin {
+  margin-top: 20%;
+  padding: 0.7rem 6.5rem;
+  border: none;
+  background: #233073;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btnregister {
+  margin-top: 5%;
+  color: #ffffff;
+  font-family: "Urbanist";
+  cursor: pointer;
+}
+
+.btnregister:hover {
+  color: #efc84a;
+}
+
+.logo {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 1100px) {
+  .loginpage {
+    align-items: flex-start;
+    background-image: linear-gradient(#efc84a, #e56353);
+    background-image: url("../../assets/backgroundentry.svg");
+    background-size: cover;
+  }
+
+  .containerrr {
+    width: 50%;
+    height: 100vh;
+    border-radius: 0;
+    background: rgba(9, 15, 92, 0.473);
+  }
+}
