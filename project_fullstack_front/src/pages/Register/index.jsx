@@ -58,7 +58,7 @@ const Register = () => {
             />
             <small>{errors.password?.message}</small>
 
-            <button className="btnlogin">registrar</button>
+            <button type="submit" className="btnlogin">registrar</button>
           </form>
 
           <Link to="/login" className="btnregister">

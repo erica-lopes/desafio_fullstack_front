@@ -13,10 +13,16 @@
 }
 
 .headerDash {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
   border-bottom: solid 0.1rem #efc84a;
+}
+
+.btnConfig {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .welcomeUser {
@@ -24,30 +30,21 @@
   font-size: 1.2rem;
 }
 
-.imgConfig {
-  width: 1.5rem;
-}
-
 .search {
   margin-top: 2.5rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  align-self: center;
-  border-radius: 0.5rem;
   background: rgba(241, 150, 150, 0.8);
-  padding: 0.2rem 2rem;
+  border-radius: 0.5rem;
 }
 
 .inputsearch {
-  width: 100%;
   background-image: url("../../assets/search.svg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: 1.2em;
-  padding: 0.1rem 2rem;
-  margin: 0.1rem;
+  padding: 0.5rem 2rem;
+  margin: 0.3rem;
+  border: none;
 }
 
 .title {
@@ -62,13 +59,25 @@
   color: #233073;
 }
 
-.counter,
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(9, 15, 92, 0.473);
+  color: #ffffff;
+  border-radius: 50%;
+
+}
+
 .imgContact {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 2rem;
+  height: 1.8rem;
+  
   background-color: rgba(9, 15, 92, 0.473);
   color: #ffffff;
   border-radius: 50%;
@@ -76,7 +85,6 @@
 
 .contacts {
   display: block;
-
   height: 60vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -84,13 +92,10 @@
 
 .card {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   font-weight: 400;
   font-size: 0.82rem;
-  margin-top: 1rem;
-  border-bottom: solid 0.1rem #efc84a;
-  padding: 1.5rem;
+  margin-top: 3rem;
 }
 
 p {
@@ -98,8 +103,13 @@ p {
 }
 
 .contentContact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #233073;
-  padding-bottom: 1rem;
+  margin-top: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: solid 0.1rem #efc84a;
 }
 
 .btnEdit {
@@ -109,6 +119,12 @@ p {
 
 .btns {
   width: 0.9rem;
+  padding-right: 1.5rem;
+}
+
+.btns:hover {
+  transform: scale(1.3);
+  cursor: pointer;
 }
 
 .footerDash {
@@ -116,7 +132,8 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 1rem;
+
 }
 
 .footer {
@@ -135,21 +152,17 @@ p {
     width: 50rem;
   }
 
-  .card {
+  .contentContact {
+    gap: 3rem;
+    color: #233073;
+    padding: 1rem;
+  }
+
+  .data {
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: 400;
-    font-size: 0.82rem;
-    margin-top: 1rem;
-    border-bottom: solid 0.1rem #efc84a;
-  }
-
-  .contentContact {
-    display: flex;
-    gap: 3rem;
-    color: #233073;
-    padding-bottom: 1rem;
   }
 
   .btnEdit {

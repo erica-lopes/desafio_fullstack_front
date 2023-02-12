@@ -1,6 +1,4 @@
 :root {
-  /* display: flex;
-  justify-content: center; */
   font-family: "Urbanist", sans-serif;
   line-height: 1.5;
 }
@@ -32,22 +30,3 @@ body {
 h1 {
   line-height: 1.1;
 }
-
-/* button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-
-} */

@@ -1,0 +1,130 @@
+.secadd {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 2rem;
+    font-weight: 600;
+    color: #233073;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+  }
+  
+  .add:hover {
+    background-color: #efc84a;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 0.5rem2rem;
+  }
+  
+  .imgAdd {
+    width: 1.5rem;
+    color: #233073;
+  }
+  
+  .imgAdd:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+  
+  .imgConfig {
+    width: 1.5rem;
+    color: #233073;
+  }
+  
+  .imgConfig:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+  
+  .modalSet2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalOverlay2 {
+    background-color: rgba(31, 24, 65, 0.9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modalContent2 {
+    width: 90%;
+    max-width: 600px;
+  
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 1rem;
+  }
+
+  .btntitle {
+    margin-bottom: 0.5rem;
+  }
+
+  .btneditcontact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 0.8rem;
+  }
+  
+  .btnClose2 {
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #e56353;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btnSave2,
+  .btnRemove2 {
+    width: 70%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: none;
+    background-color: #efc84a;
+    font-family: "Urbanist";
+    font-weight: 700;
+    color: #ffffff;
+    padding: 0.5rem 3.2rem;
+    cursor: pointer;
+  }
+  
+  .btnRemove2 {
+    background-color: #e56353;
+    margin-bottom: 2rem;
+  }
+  
+  .inputModalEditUser2 {
+    width: 67%;
+    background-color: #adabb9;
+    color: #233073;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .inputModalEditUser2::placeholder {
+    color: #ffffff;
+  }
+  
