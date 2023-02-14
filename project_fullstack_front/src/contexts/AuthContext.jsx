@@ -128,29 +128,29 @@ const AuthProvider = ({ children }) => {
   };
 
   const updateContact = async (data) => {
-    // await api
-    //   .patch(`clients/${contact}`, data)
-    //   .then((response) => {
-    //     const findContact = contacts?.find((c) => c.id === contact);
-    //     const contactIndex = contacts?.indexOf(findContact);
-    //     contacts?.splice(contactIndex, 1, data);
-    //     setModalEditII(false);
-    //     navigate("/dashboard", { replace: true });
-    //     window.location.reload(true);
-    //   })
-    //   .catch((error) => console.error(error));
+    await api
+      .patch(`clients/${contact.id}`, data)
+      .then((response) => {
+        const findContact = contacts?.find((c) => c.id === contact);
+        const contactIndex = contacts?.indexOf(findContact);
+        contacts?.splice(contactIndex, 1, data);
+        setModalEditII(false);
+        navigate("/dashboard", { replace: true });
+      })
+      .catch((error) => console.error(error));
   };
 
   const deleteContact = async () => {
-    // await api
-    //   .delete(`clients/${contact}`)
-    //   .then((response) => {
-    //     const findContact = contacts?.find((c) => c.id === contact);
-    //     const contactIndex = contacts?.indexOf(findContact);
-    //     contacts?.splice(contactIndex, 1);
-    //     setModalEditII(false);
-    //   })
-    // .catch((error) => console.error(error));
+    await api
+      .delete(`clients/${contact.id}`)
+      .then((response) => {
+        const findContact = contacts?.find((c) => c.id === contact);
+        const contactIndex = contacts?.indexOf(findContact);
+        contacts?.splice(contactIndex, 1);
+        setModalEditII(false);
+        window.location.reload(true);
+      })
+      .catch((error) => console.error(error));
   };
 
   return (

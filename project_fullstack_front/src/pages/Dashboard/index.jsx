@@ -7,9 +7,11 @@ import { ImExit } from "react-icons/im";
 import EditUser from "../../components/EditUser";
 import AddContact from "../../components/AddContact";
 import EditContact from "../../components/EditContact";
+import { AiFillEdit } from "react-icons/ai";
 
 const Dashboard = () => {
-  const { user, logout, contacts, setContacts } = useContext(AuthContext);
+  const { user, logout, contacts, setContacts, openModalII, setContact } =
+    useContext(AuthContext);
 
   const [search, setSearch] = useState("");
 
@@ -29,6 +31,11 @@ const Dashboard = () => {
         setContacts(response.data);
       });
   }, []);
+
+  const updateContact = (contact) => {
+    setContact(contact);
+    openModalII();
+  };
 
   return (
     <>
@@ -69,7 +76,7 @@ const Dashboard = () => {
 
               <ul className="card">
                 {filteredContacts.map((contact) => (
-                  <li key={contact.id} className="contentContact">
+                  <li key={contact.name} className="contentContact">
                     <div className="imgContact">
                       <p>
                         <b>{contact.name[0]}</b>
@@ -83,6 +90,11 @@ const Dashboard = () => {
                       <p>{contact.registrationDate}</p>
                     </div>
                     <div className="btnEdit">
+                      <AiFillEdit
+                        type="button"
+                        className="btns"
+                        onClick={() => updateContact(contact)}
+                      />
                       <EditContact />
                     </div>
                   </li>

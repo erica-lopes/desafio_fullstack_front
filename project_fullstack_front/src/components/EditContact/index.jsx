@@ -5,7 +5,6 @@ import { AuthContext } from "../../contexts/AuthContext";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import clientSchema from "../../validators/contactClient";
-import { AiFillEdit } from "react-icons/ai";
 
 Modal.setAppElement("#root");
 
@@ -15,7 +14,6 @@ const EditContact = () => {
     updateContact,
     deleteContact,
     modalEditII,
-    openModalII,
     closeModalII,
   } = useContext(AuthContext);
 
@@ -30,11 +28,6 @@ const EditContact = () => {
   return (
     <>
       <div className="modalSet">
-        <AiFillEdit
-          onClick={openModalII}
-          className="btns"
-          alt="imagem editar"
-        />
         <Modal
           isOpen={modalEditII}
           onRequestClose={closeModalII}
@@ -53,7 +46,6 @@ const EditContact = () => {
             <input
               className="inputModalEditUser"
               type="text"
-              placeholder="Nome"
               id="name"
               defaultValue={contact?.name}
               {...register("name")}
@@ -62,7 +54,6 @@ const EditContact = () => {
             <input
               className="inputModalEditUser"
               type="text"
-              placeholder="Email"
               id="email"
               defaultValue={contact?.email}
               {...register("email")}
@@ -71,7 +62,6 @@ const EditContact = () => {
             <input
               className="inputModalEditUser"
               type="text"
-              placeholder="Contato"
               id="phoneNumber"
               defaultValue={contact?.phoneNumber}
               {...register("phoneNumber")}
